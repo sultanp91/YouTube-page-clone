@@ -19,6 +19,7 @@ nav {
   align-items: center;
   background-color: #ffffff;
   height: 5.5rem;
+  padding: 2rem 0;
 }
 
 ul {
@@ -28,6 +29,45 @@ ul {
 }
 
 .material-icons {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   color: #606060;
+}
+
+.main {
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.search-button,
+input {
+  display: inline-block;
+  height: 3.5rem;
+}
+
+.search-button {
+  background-color: #f8f8f8;
+  width: 5rem;
+}
+.nav-left,
+.nav-right {
+  flex: 0 1;
+}
+
+.nav-center {
+  flex: 2 1;
+  justify-content: center;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+#searchbar {
+  width: 50rem;
+  font-size: 1.6rem;
+}
+
+#search-icon {
+  font-size: 2rem;
+  color: #888888;
 }
