@@ -8,6 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <link rel="stylesheet" href="styles.css" />
     <title>VS Code Top-Ten Pro Tips - YouTube</title>
   </head>
@@ -16,7 +18,11 @@
       <ul class="nav-left">
         <li><span class="material-icons hamburger"> menu </span></li>
         <li>
-          <img src="YouTube-Logo.png" class="youtube-logo" alt="YouTube logo" />
+          <img
+            src="./images/YouTube-Logo.png"
+            class="youtube-logo"
+            alt="YouTube logo"
+          />
         </li>
       </ul>
       <ul class="nav-center">
@@ -46,19 +52,37 @@
     </nav>
     <main>
       <div class="video-container">
-        <iframe
-          width="853"
-          height="505"
-          src="https://www.youtube.com/embed/u21W_tfPVrY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <h1>VS Code Top-Ten Pro Tips</h1>
+        <div class="iframe-container">
+          <iframe
+            width="853"
+            height="505"
+            src="https://www.youtube.com/embed/u21W_tfPVrY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <h1 class="video-title">VS Code Top-Ten Pro Tips</h1>
         <p>1,564,739 views•7 Jun 2018</p>
       </div>
-      <aside></aside>
+      <aside class="sidebar">
+        <div class="sidebar-related-video">
+          <div class="thumbnail-pic-container">
+            <img
+              src="./images/tb1.jpg"
+              class="thumbnail-pic"
+              alt="video thumbnail"
+            />
+            <p class="thumbnail-time">10:49</p>
+          </div>
+
+          <p class="thumbnail-title">History of JavaScript</p>
+          <p class="thumbnail-channel">Fireship</p>
+          <p class="thumbnail-data">626k views &#183; 1 year ago</p>
+        </div>
+      </aside>
     </main>
   </body>
 </html>
