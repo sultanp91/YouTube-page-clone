@@ -156,3 +156,17 @@ aside {
   width: 55%;
   vertical-align: top;
 }
+
+#share-icon {
+  transform: scaleX(-1);
+}
+
+.video-details,
+.video-social {
+  display: inline-block;
+  width: 45%;
+}
+
+.video-social {
+  text-align: right;
+}
