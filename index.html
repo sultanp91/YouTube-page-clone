@@ -51,7 +51,7 @@
         <li>SP</li>
       </ul>
     </nav>
-    <main>
+    <main class="main">
       <div class="video-container">
         <div class="iframe-container">
           <iframe
@@ -66,14 +66,16 @@
         </div>
 
         <h1 class="video-title">VS Code Top-Ten Pro Tips</h1>
-        <h3 class="video-details">1,564,739 views • 7 Jun 2018</h3>
-        <h3 class="video-social">
-          <span class="material-icons"> thumb_up </span>40k
-          <span class="material-icons"> thumb_down </span> 650
-          <span id="share-icon" class="material-icons"> reply </span> SHARE
-          <span class="material-icons"> playlist_add </span> SAVE
-          <span class="material-icons"> more_horiz </span>
-        </h3>
+        <div class="video-information">
+          <h3 class="video-details">1,564,739 views • 7 Jun 2018</h3>
+          <h3 class="video-social">
+            <span class="material-icons"> thumb_up </span>40k
+            <span class="material-icons"> thumb_down </span> 650
+            <span id="share-icon" class="material-icons"> reply </span> SHARE
+            <span class="material-icons"> playlist_add </span> SAVE
+            <span class="material-icons"> more_horiz </span>
+          </h3>
+        </div>
       </div>
       <aside class="sidebar">
         <div class="sidebar-related-video">
@@ -152,7 +154,34 @@
           <p class="thumbnail-channel">Fireship</p>
           <p class="thumbnail-data">136k views &#183; 1 month ago</p>
         </div>
+        <div class="sidebar-related-video">
+          <div class="thumbnail-pic-container">
+            <img
+              src="./images/tb6.jpg"
+              class="thumbnail-pic"
+              alt="video thumbnail"
+            />
+            <p class="thumbnail-time">35:11</p>
+          </div>
+
+          <p class="thumbnail-title">
+            Jake Archibald: In The Loop - JSConf.Asia
+          </p>
+          <p class="thumbnail-channel">JSConf</p>
+          <p class="thumbnail-data">355k views &#183; 3 years ago</p>
+        </div>
       </aside>
+      <section class="section-comments">
+        <div class="user-comment-form">
+          <div>SP</div>
+          <input
+            type="text"
+            name="comment-form"
+            id="comment-form"
+            placeholder="Add a public comment..."
+          />
+        </div>
+      </section>
     </main>
   </body>
 </html>

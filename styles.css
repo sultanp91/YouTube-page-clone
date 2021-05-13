@@ -16,7 +16,14 @@ html {
   height: 5rem;
 }
 
+main {
+  background-color: #f8f8f8;
+}
+
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,11 +44,6 @@ ul {
 }
 .material-icons:hover {
   cursor: pointer;
-}
-
-.main {
-  background-color: #f9f9f9;
-  height: 100vh;
 }
 
 .search-button,
@@ -130,6 +132,7 @@ aside {
 
 .sidebar-related-video {
   margin: 1rem 0;
+  cursor: pointer;
 }
 
 .thumbnail-pic-container {
@@ -161,6 +164,12 @@ aside {
   transform: scaleX(-1);
 }
 
+.video-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .video-details,
 .video-social {
   display: inline-block;
@@ -168,5 +177,33 @@ aside {
 }
 
 .video-social {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.video-social > * {
+  margin: 0 0.7rem;
+}
+
+/* Comments section */
+
+.section-comments {
+  display: inline-block;
+  width: 65%;
+  margin-left: 3rem;
+}
+
+.user-comment-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#comment-form {
+  display: inline-block;
+  width: 95%;
+  border: none;
+  border-bottom: solid 1px #030303;
+  background: none;
 }
