@@ -11,13 +11,13 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #f8f8f8;
+}
+
 /* Nav Styling */
 .youtube-logo {
   height: 5rem;
-}
-
-main {
-  background-color: #f8f8f8;
 }
 
 nav {
@@ -91,9 +91,14 @@ input {
 
 /* Video container styling */
 
-.video-container {
+main {
   display: inline-block;
   width: 65%;
+}
+
+.video-container {
+  display: inline-block;
+  width: 95%;
   padding-top: 2rem;
   margin-left: 3rem;
 }
@@ -124,14 +129,14 @@ input {
 
 aside {
   vertical-align: top;
-  width: 30%;
+  width: 29%;
   display: inline-block;
   padding-top: 2rem;
   margin-left: 2rem;
 }
 
 .sidebar-related-video {
-  margin: 1rem 0;
+  margin: 0.8rem 0;
   cursor: pointer;
 }
 
@@ -154,11 +159,28 @@ aside {
   background-color: #030303;
 }
 
-.thumbnail-title {
+.thumbnail-info {
   display: inline-block;
   width: 55%;
   vertical-align: top;
 }
+
+.thumbnail-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #030303;
+  line-height: 1.6rem;
+}
+
+.thumbnail-data,
+.thumbnail-channel {
+  color: #606060;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin: 0.4rem 0;
+}
+
+/* Video information and social */
 
 #share-icon {
   transform: scaleX(-1);
@@ -182,6 +204,22 @@ aside {
   align-items: center;
 }
 
+.social-text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #606060;
+}
+
+.video-title {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #030303;
+}
+.video-details {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #606060;
+}
 .video-social > * {
   margin: 0 0.7rem;
 }
@@ -190,7 +228,7 @@ aside {
 
 .section-comments {
   display: inline-block;
-  width: 65%;
+  width: 95%;
   margin-left: 3rem;
 }
 
@@ -206,4 +244,5 @@ aside {
   border: none;
   border-bottom: solid 1px #030303;
   background: none;
+  margin: 4rem 0;
 }
