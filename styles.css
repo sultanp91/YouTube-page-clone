@@ -253,13 +253,14 @@ aside {
 
 .user-comment-name {
   color: #030303;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .user-comment-icon {
   display: inline-block;
   width: 4rem;
+  height: 4rem;
 }
 
 .user-comment {
@@ -267,14 +268,19 @@ aside {
 }
 
 .user-comment-icon img {
+  height: 100%;
   width: 100%;
   vertical-align: middle;
-  border-radius: 100%;
-  margin-top: -1.5rem;
+  border-radius: 50%;
+  margin-top: -3.2rem;
 }
 
 .user-comment-content {
   display: inline-block;
   max-width: 90%;
   padding-left: 2rem;
+}
+
+.user-comment-text {
+  font-size: 1.4rem;
 }
